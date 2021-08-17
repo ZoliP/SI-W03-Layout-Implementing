@@ -182,7 +182,7 @@ span.slogan {
 article.new {
   display: flex;
   justify-content: space-between;
-  grid-gap: 30px;
+  grid-gap: 27px;
   margin: 62px 20px 0 20px;
   padding-bottom: 30px;
   border-bottom: 1px dashed #000000;
@@ -229,25 +229,25 @@ article.new section a:hover {
   border-radius: 20px;
 }
 
-.popular {
+.mostPopular {
   display: flex;
   grid-gap: 30px;
   justify-content: space-between;
   margin: 30px 20px;
 }
 
-.popular article {
+.mostPopular article {
   flex: 1 0 62%;
   border-bottom: 1px dashed #a8acab;
 }
 
-.popular article section {
+.mostPopular article section {
   display: flex;
   grid-gap: 20px;
   padding-bottom: 20px;
 }
 
-.popular article section figure {
+.mostPopular article section figure {
   margin: 0;
   height: 160px;
 }
@@ -284,7 +284,7 @@ article section .articleWrapper {
 }
 
 aside {
-  flex: 1 0 28%;
+  flex: 1 0 26%;
   background-color: #f6f6f6;
   padding: 15px 8px;
 }
@@ -303,32 +303,42 @@ aside ul {
   margin-bottom: 0;
 }
 
-aside ul li {
-  font-size: 9px;
-  list-style: none;
-  border-bottom: 1px solid #a8aa9f;
-  padding: 6px 0;
-}
-
 aside ul li::before {
   content: "\00BB";
   display: inline-block;
   margin-right: 6px;
 }
 
+aside ul li {
+  font-size: 9px;
+  list-style: none;
+  border-bottom: 1px solid #a8aa9f;
+  padding: 6px 0;
+  transition: 0.2s ease-in-out all;
+}
+
+aside ul li:hover {
+  background-color: #a95622;
+}
+
 aside ul li a {
   color: #0a3677;
 }
 
-.mostPopular {
+.popular {
   display: flex;
   justify-content: space-between;
   margin: 0 20px;
 }
 
-.mostPopular section figure {
+.popular section figure {
   height: 100px;
   margin: 0;
+  transition: 0.2s ease-in-out all;
+}
+
+.popular section figure:hover {
+  background-color: #a95622;
 }
 
 footer {
